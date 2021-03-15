@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ivan\\Desktop\\.netCore\\home_works\\Lesson1\\Lesson1\\Lesson1.csproj": {}
+    "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\Lesson1\\Lesson1\\Lesson1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ivan\\Desktop\\.netCore\\home_works\\Lesson1\\Lesson1\\Lesson1.csproj": {
+    "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\Lesson1\\Lesson1\\Lesson1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivan\\Desktop\\.netCore\\home_works\\Lesson1\\Lesson1\\Lesson1.csproj",
+        "projectUniqueName": "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\Lesson1\\Lesson1\\Lesson1.csproj",
         "projectName": "Lesson1",
-        "projectPath": "C:\\Users\\Ivan\\Desktop\\.netCore\\home_works\\Lesson1\\Lesson1\\Lesson1.csproj",
+        "projectPath": "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\Lesson1\\Lesson1\\Lesson1.csproj",
         "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivan\\Desktop\\.netCore\\home_works\\Lesson1\\Lesson1\\obj\\",
+        "outputPath": "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\Lesson1\\Lesson1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

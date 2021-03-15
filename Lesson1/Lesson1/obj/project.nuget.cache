@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mpmW+xyu8eD/8fgoFJnvY21pd1gIUFRnNQ91Gf8v8AVSmY+6TE5SsodxhCNCpT6PoPcVFnpuXjcMvS2qF/jRgQ==",
+  "dgSpecHash": "yAySUHwkrs1SlKQqhDc+3LB+ByNjilRtUesLZH4lTFw4q5ESjOgkWeXqFlUPIfycTVEBR1zXj5ZtrQ3VrWOx4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivan\\Desktop\\.netCore\\home_works\\Lesson1\\Lesson1\\Lesson1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\Lesson1\\Lesson1\\Lesson1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ivan\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
