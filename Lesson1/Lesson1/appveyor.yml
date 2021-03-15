@@ -1,0 +1,1 @@
+version: 1.0.{build}configuration: Releasecache:- packages -> **\packages.configbefore_build: nuget restorebuild:project: AppVeyorExample.csprojpublish_wap: true
