@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EQZl8uSfpH1jvV0kZ+XIpVj9NWGQqJsEDQjn5QP9LH99XfaoOQeeTvPYXB68FIcHD4BwzUaUv8G4pSQeu2jgjg==",
+  "dgSpecHash": "oVMecjGNGs0cSGYV860JTwd3hSRebsKmJ3jKCMUXn+rGc1O0X+5cazK2LXUx30hj85+New3yHE2LUN/cgDVKrA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\lesson2\\lesson2\\lesson2.csproj",
+  "projectFilePath": "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\Fiction\\Fiction\\Fiction.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ivan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ivan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

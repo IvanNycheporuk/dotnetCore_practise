@@ -1,4 +1,4 @@
-using lesson2.Models;
+using Fiction.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace lesson2
+namespace Fiction
 {
     public class Startup
     {
@@ -26,7 +26,7 @@ namespace lesson2
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<NewsDbContext>();
+            services.AddDbContext<FictionDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

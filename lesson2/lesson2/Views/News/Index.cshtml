@@ -1,17 +1,20 @@
 ﻿@{
     var news = ViewData["News"] as List<News>;
+    var chosenItem = ViewData["Item"] as News;
 }
 
 @section Table {
-    <table>
-        @foreach (var item in news)
-        {
-            <tr>
-                <td>@item.Id</td>
-                <td>@item.IsFake</td>
-                <td>@item.Title</td>
-                <td>@item.AuthorName</td>
-            </tr>
-        }
-    </table>
+    <h1>@chosenItem.Title</h1>
+
+        @*<table>
+            @foreach (var item in news)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.IsFake</td>
+                    <td>@item.Title</td>
+                    <td>@item.AuthorName</td>
+                </tr>
+            }
+        </table>*@
 }
