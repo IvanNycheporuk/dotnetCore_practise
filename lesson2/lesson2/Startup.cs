@@ -27,6 +27,8 @@ namespace lesson2
             services.AddControllersWithViews();
 
             services.AddDbContext<NewsDbContext>();
+
+            services.AddScoped<INewsRepository, SqlNewsRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

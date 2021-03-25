@@ -27,14 +27,19 @@ namespace Fiction.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Character>().HasData(
-                new Character() { Id = 1, Age = 2, Name = "Atest", StoryId = 1 },
-                new Character() { Id = 2, Age = 22, Name = "Btest", StoryId = 2 },
-                new Character() { Id = 3, Age = 12, Name = "Ctest", StoryId = 3 });
+                new Character() { Id = 1, Age = 21, Name = "Test", StoryId = 1 },
+                new Character() { Id = 2, Age = 22, Name = "Frodo", StoryId = 2 },
+                new Character() { Id = 3, Age = 42, Name = "Joel", StoryId = 2 },
+                new Character() { Id = 4, Age = 32, Name = "Sara", StoryId = 2 },
+                new Character() { Id = 5, Age = 22, Name = "PotM", StoryId = 2 },
+                new Character() { Id = 6, Age = 62, Name = "Warden", StoryId = 2 },
+                new Character() { Id = 7, Age = 22, Name = "Naga", StoryId = 2 },
+                new Character() { Id = 8, Age = 12, Name = "Harry", StoryId = 3 });
 
             modelBuilder.Entity<Story>().HasData(
-                new Story() { Id = 1, Name = "Atest" },
-                new Story() { Id = 2, Name = "Btest" },
-                new Story() { Id = 3, Name = "Ctest" });
+                new Story() { Id = 1, Name = "Some great story" },
+                new Story() { Id = 2, Name = "Awesome story with unexpected ending" },
+                new Story() { Id = 3, Name = "Great news about that story" });
         }
     }
 }

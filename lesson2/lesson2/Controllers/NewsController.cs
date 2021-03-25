@@ -9,25 +9,26 @@ namespace lesson2.Controllers
 {
     public class NewsController : Controller
     {
-        private NewsDbContext _dbContext;
+        private INewsRepository _newsRepository;
 
-        public NewsController(NewsDbContext dbContext)
+        public NewsController(INewsRepository newsRepository)
         {
-            _dbContext = dbContext;
+            _newsRepository = newsRepository;
         }
 
         [HttpGet]
         public IActionResult Index()
         {
-            ViewData["News"] = _dbContext.News.ToList();
+
+            ViewData["News"] = _newsRepository.GetNews();
 
             return View();
         }
 
-        [HttpGet("news/{id}")]
+        [Route("news/{id}")]
         public IActionResult Index(int id)
         {
-            ViewData["Item"] = _dbContext.News.SingleOrDefault(x => x.Id == id);
+            ViewData["Item"] = _newsRepository.GetNews().FirstOrDefault(x => x.Id == id);
 
             return View();
         }

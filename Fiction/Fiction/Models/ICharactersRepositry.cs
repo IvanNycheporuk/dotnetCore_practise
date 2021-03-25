@@ -7,6 +7,8 @@ namespace Fiction.Models
 {
     public interface ICharactersRepositry
     {
-        IEnumerable<Character> GetCharacters();
+        IEnumerable<Character> GetCharacters(string name, int? age);
+
+        Character GetCharacterById(int id);
     }
 }

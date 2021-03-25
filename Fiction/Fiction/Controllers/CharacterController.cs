@@ -7,11 +7,9 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace Fiction.Controllers
-{
-    [Route("example")]
+{    
     public class CharacterController : Controller
-    {
-        //private FictionDbContext _dbContext;
+    {        
         private readonly ICharactersRepositry _charactersRepositry;
 
         public CharacterController(ICharactersRepositry charactersRepositry)
@@ -19,15 +17,24 @@ namespace Fiction.Controllers
             _charactersRepositry = charactersRepositry;
         }
 
-        [Route("c/index")]
-        [Route("char/index")]
-        public IActionResult Index()
+        [Route("/character")]
+        public IActionResult Index([FromQuery]string name, [FromQuery]int? age)
         {
-            var characters = _charactersRepositry.GetCharacters();
-            
-            ViewData["Story"] = characters.ToList();
 
-            // _dbContext.Characters.ToList();
+            var characters = _charactersRepositry.GetCharacters(name, age);
+
+            ViewData["Characters"] = characters.ToList();            
+            
+            return View();
+        }
+
+        [Route("character/{id}")]
+        public IActionResult SingleCharacter(int id)
+        {
+            var character = _charactersRepositry.GetCharacterById(id);
+
+            ViewData["Character"] = character;
+
             return View();
         }
     }

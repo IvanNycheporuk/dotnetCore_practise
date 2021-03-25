@@ -1,0 +1,20 @@
+﻿@{
+    var character = ViewData["Character"] as Character;
+}
+
+
+<table class="table">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Age</th>
+        <th scope="col">Name</th>
+        <th scope="col">Story</th>
+    </tr>
+    <tr>
+        <td>@character.Id</td>
+        <td>@character.Age</td>
+        <td>@character.Name</td>
+        <td>@character.Story</td>
+    </tr>
+    
+</table>

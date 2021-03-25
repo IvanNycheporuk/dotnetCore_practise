@@ -1,18 +1,21 @@
 ﻿@{ 
-    var data = ViewData["Story"] as List<Character>;
+    var data = ViewData["Characters"] as List<Character>;
 }
 
-<table>
+<table class="table">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Age</th>
+        <th scope="col">Name</th>
+        <th scope="col">Story</th>
+    </tr>
     @foreach (var item in data)
     {
-    <tr>
-        <td>@item.Id</td>
-        <td>@item.Age</td>
-        <td>@item.Name</td>
-        <td>@item.Story</td>
-        <td>@item.StoryId</td>
-    </tr>
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Age</td>
+            <td>@item.Name</td>
+            <td>@item.Story</td>            
+        </tr>
     }
 </table>
-
-<p>Character are going to be displayed here</p>
