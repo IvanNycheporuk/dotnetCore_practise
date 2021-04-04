@@ -17,20 +17,52 @@ namespace lesson2.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index([FromHeader]bool isFake)
         {
 
-            ViewData["News"] = _newsRepository.GetNews();
+            var test = _newsRepository.GetNews(isFake).ToList();
+
+            ViewData["News"] = test;
+
+            return View();
+        }
+
+        [HttpDelete]
+        public void UpdateAllNews([FromBody]List<News> news)
+        {
+            _newsRepository.UpdateAllNews(news);
+        }
+
+        [HttpPost]
+        public void AddNews([FromBody]News news)
+        {
+            _newsRepository.AddNews(news);
+        }
+        [Route("news/{id}")]
+        [HttpGet]
+        public IActionResult Single(int id, [FromHeader] bool isFake)
+        {
+            ViewData["Item"] = _newsRepository.GetNews(isFake).FirstOrDefault(x => x.Id == id);
 
             return View();
         }
 
         [Route("news/{id}")]
-        public IActionResult Index(int id)
+        [HttpPut]
+        public void UpdateSingleNews(int id, [FromBody] News news)
         {
-            ViewData["Item"] = _newsRepository.GetNews().FirstOrDefault(x => x.Id == id);
 
-            return View();
+            var singleNews = new News()
+            {
+                Id = id,
+                AuthorName = news.AuthorName,
+                IsFake = news.IsFake,
+                Text = news.Text,
+                Title = news.Title
+            };
+
+            _newsRepository.UpdateSingleNews(singleNews);
         }
+
     }
 }

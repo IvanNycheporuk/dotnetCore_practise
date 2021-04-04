@@ -7,6 +7,12 @@ namespace lesson2.Models
 {
     public interface INewsRepository
     {
-        IEnumerable<News> GetNews();
+        IEnumerable<News> GetNews(bool isFake);
+
+        void UpdateSingleNews(News news);
+
+        void UpdateAllNews(List<News> news);
+
+        void AddNews(News news);
     }
 }

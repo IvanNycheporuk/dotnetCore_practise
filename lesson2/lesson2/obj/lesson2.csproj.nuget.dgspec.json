@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\lesson2\\lesson2\\lesson2.csproj": {}
+    "C:\\Users\\ivann\\Desktop\\.Net Core\\dotnetCore_practise\\lesson2\\lesson2\\lesson2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\lesson2\\lesson2\\lesson2.csproj": {
+    "C:\\Users\\ivann\\Desktop\\.Net Core\\dotnetCore_practise\\lesson2\\lesson2\\lesson2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\lesson2\\lesson2\\lesson2.csproj",
+        "projectUniqueName": "C:\\Users\\ivann\\Desktop\\.Net Core\\dotnetCore_practise\\lesson2\\lesson2\\lesson2.csproj",
         "projectName": "lesson2",
-        "projectPath": "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\lesson2\\lesson2\\lesson2.csproj",
-        "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\lesson2\\lesson2\\obj\\",
+        "projectPath": "C:\\Users\\ivann\\Desktop\\.Net Core\\dotnetCore_practise\\lesson2\\lesson2\\lesson2.csproj",
+        "packagesPath": "C:\\Users\\ivann\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ivann\\Desktop\\.Net Core\\dotnetCore_practise\\lesson2\\lesson2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ivann\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
