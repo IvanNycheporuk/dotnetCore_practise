@@ -5,10 +5,14 @@ using System.Threading.Tasks;
 
 namespace Fiction.Models
 {
-    public interface ICharactersRepositry
+    public interface ICharactersRepository
     {
         IEnumerable<Character> GetCharacters(string name, int? age);
 
         Character GetCharacterById(int id);
+
+        void Add(Character character);
+
+        IEnumerable<Character> GetAll();
     }
 }

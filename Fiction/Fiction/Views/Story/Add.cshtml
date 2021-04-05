@@ -1,0 +1,17 @@
+﻿@model Story
+@{
+    ViewData["Title"] = "Add Story";
+}
+
+<div>
+    <h1 class="display-4">Add story</h1>
+
+    <form asp-controller="Story" asp-action="Add" method="post">
+        <label asp-for="Name"></label><br>
+        <input asp-for="Name" type="text" /><br>
+        <span asp-validation-for="Name"></span>
+
+        <button type="submit">Add character</button>
+    </form>
+
+</div>

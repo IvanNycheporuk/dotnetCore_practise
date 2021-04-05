@@ -7442,19 +7442,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ivan\\.nuget\\packages\\": {}
+    "C:\\Users\\ivann\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\Fiction\\Fiction\\Fiction.csproj",
+      "projectUniqueName": "C:\\Users\\ivann\\Desktop\\.Net Core\\dotnetCore_practise\\Fiction\\Fiction\\Fiction.csproj",
       "projectName": "Fiction",
-      "projectPath": "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\Fiction\\Fiction\\Fiction.csproj",
-      "packagesPath": "C:\\Users\\Ivan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ivan\\Desktop\\.netCore\\dotnetCore_practise\\Fiction\\Fiction\\obj\\",
+      "projectPath": "C:\\Users\\ivann\\Desktop\\.Net Core\\dotnetCore_practise\\Fiction\\Fiction\\Fiction.csproj",
+      "packagesPath": "C:\\Users\\ivann\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ivann\\Desktop\\.Net Core\\dotnetCore_practise\\Fiction\\Fiction\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ivann\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

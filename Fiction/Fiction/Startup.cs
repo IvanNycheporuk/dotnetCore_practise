@@ -29,7 +29,8 @@ namespace Fiction
 
             services.AddDbContext<FictionDbContext>();
 
-            services.AddScoped<ICharactersRepositry, SqlCharactersRepository>();
+            services.AddScoped<ICharactersRepository, SqlCharactersRepository>();
+            services.AddScoped<IStoryRepository, SqlStoryRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

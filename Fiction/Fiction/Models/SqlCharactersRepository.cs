@@ -5,13 +5,24 @@ using System.Threading.Tasks;
 
 namespace Fiction.Models
 {
-    public class SqlCharactersRepository : ICharactersRepositry
+    public class SqlCharactersRepository : ICharactersRepository
     {
         private readonly FictionDbContext _dbContext;
 
         public SqlCharactersRepository(FictionDbContext dbContext)
         {
             _dbContext = dbContext;
+        }
+
+        public void Add(Character character)
+        {
+            _dbContext.Add(character);
+            _dbContext.SaveChanges();
+        }
+
+        public IEnumerable<Character> GetAll()
+        {
+            return _dbContext.Characters;
         }
 
         public Character GetCharacterById(int id)

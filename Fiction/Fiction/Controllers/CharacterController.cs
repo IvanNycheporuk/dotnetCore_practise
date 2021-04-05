@@ -10,30 +10,44 @@ namespace Fiction.Controllers
 {    
     public class CharacterController : Controller
     {        
-        private readonly ICharactersRepositry _charactersRepositry;
+        private readonly ICharactersRepository _charactersRepository;
 
-        public CharacterController(ICharactersRepositry charactersRepositry)
+        public CharacterController(ICharactersRepository charactersRepositry)
         {
-            _charactersRepositry = charactersRepositry;
+            _charactersRepository = charactersRepositry;
         }
 
-        [Route("/character")]
         public IActionResult Index([FromQuery]string name, [FromQuery]int? age)
         {
 
-            var characters = _charactersRepositry.GetCharacters(name, age);
+            var characters = _charactersRepository.GetCharacters(name, age);
 
             ViewData["Characters"] = characters.ToList();            
             
             return View();
         }
 
-        [Route("character/{id}")]
         public IActionResult SingleCharacter(int id)
         {
-            var character = _charactersRepositry.GetCharacterById(id);
+            var character = _charactersRepository.GetAll().Single(x => x.Id == id);
 
-            ViewData["Character"] = character;
+            return View(character);
+        }
+
+        [HttpGet]
+        public IActionResult Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Add(Character character)
+        {
+            if (ModelState.IsValid)
+            {
+                _charactersRepository.Add(character);
+                return RedirectToAction("Index", "Character");
+            }
 
             return View();
         }
