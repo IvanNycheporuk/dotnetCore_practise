@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Fiction.Models
 {
-    public class FictionDbContext : DbContext
+    public class FictionDbContext : IdentityDbContext
     {
         public DbSet<Character> Characters { get; set; }
         public DbSet<Story> Stories { get; set; }
@@ -26,6 +27,8 @@ namespace Fiction.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Character>().HasData(
                 new Character() { Id = 1, Age = 21, Name = "Test", StoryId = 1 },
                 new Character() { Id = 2, Age = 22, Name = "Frodo", StoryId = 2 },
