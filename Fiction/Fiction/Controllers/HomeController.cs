@@ -1,4 +1,5 @@
 ﻿using Fiction.Models;
+using Fiction.Services;
 using Fiction.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -42,6 +43,11 @@ namespace Fiction.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public void SendMessage([FromServices] IMessageSender messageSender)
+        {
+            messageSender.SendMessage();
         }
     }
 }
