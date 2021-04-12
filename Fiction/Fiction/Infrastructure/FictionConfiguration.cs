@@ -15,3 +15,5 @@ namespace Fiction.Infrastructure
         public string RecipientPhoneNumber { get; set; }
     }
 }
+
+// create internal classes

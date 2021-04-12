@@ -47,6 +47,7 @@ namespace Fiction.Controllers
 
         public void SendMessage([FromServices] IMessageSender messageSender)
         {
+            // add param to check if email or sms
             messageSender.SendMessage();
         }
     }
